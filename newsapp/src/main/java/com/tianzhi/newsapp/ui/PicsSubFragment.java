@@ -64,7 +64,7 @@ public class PicsSubFragment extends Fragment {
 			lists.add(item);
 		}
 		
-	final	 PicsSubAdapter adapter = new PicsSubAdapter(getActivity(), lists);
+		 PicsSubAdapter adapter = new PicsSubAdapter(getActivity(), lists);
 		
 		gridView.setAdapter(adapter);
 		gridView.setOnItemClickListener(new OnItemClickListener() {
