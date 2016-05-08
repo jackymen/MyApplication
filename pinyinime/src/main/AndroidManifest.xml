@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.inputmethod.pinyin"
+    android:versionCode="21" android:versionName="N929">
+	<supports-screens android:requiresSmallestWidthDp="720"/>
+	
+        <original-package android:name="com.android.inputmethod.pinyin" />
+
+        <uses-permission android:name="android.permission.VIBRATE"/>
+
+        <application android:icon="@drawable/app_icon"
+          android:label="@string/ime_name">
+            <service android:name=".PinyinDecoderService"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="com.android.inputmethod.pinyin.Decoder_Service" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </service>
+            
+           <service android:name=".HwDecoderService"
+                android:exported="true" android:process=":remote">
+                <intent-filter>
+                    <action android:name="com.android.inputmethod.pinyin.HwDecoder_Service" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </service>
+
+            <service android:name=".PinyinIME"
+                android:label="@string/ime_name"
+                    android:permission="android.permission.BIND_INPUT_METHOD">
+                <intent-filter>
+                    <action android:name="android.view.InputMethod" />
+                </intent-filter>
+                <meta-data android:name="android.view.im" android:resource="@xml/method" />
+            </service>
+            
+            
+
+            <activity android:name=".SettingsActivity"
+                android:label="@string/ime_settings_activity_name">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                </intent-filter>
+            </activity>
+
+        </application>
+</manifest>
