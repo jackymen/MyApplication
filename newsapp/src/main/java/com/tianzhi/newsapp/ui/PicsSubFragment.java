@@ -54,7 +54,7 @@ public class PicsSubFragment extends Fragment {
 		GridView gridView = (GridView) view.findViewById(R.id.gv_pics_grid);
 		
 		final ArrayList<GroupPicListItem> lists = new ArrayList<GroupPicListItem>();
-		for (int i = 0; i < 19; i++) {
+		for (int i = 0; i < 10; i++) {
 			GroupPicListItem item = new GroupPicListItem();
 			item.setTitle("揭秘中国隐形富豪" + (i + 1));
 			item.setFavoriteNum(i + 1);
