@@ -61,9 +61,9 @@ public class NewsSubFragment extends Fragment {
 			item.setFocus(false);
 			if(i==5){
 				StringBuffer urls = new StringBuffer();
-				urls.append(Constant.imageUrls[21]+",");
-				urls.append(Constant.imageUrls[22]+",");
-				urls.append( Constant.imageUrls[23]);
+				urls.append(Constant.imageUrls[1]+",");
+				urls.append(Constant.imageUrls[2]+",");
+				urls.append( Constant.imageUrls[3]);
 				item.setUrls(urls.toString());
 				item.setNewsType(Constant.news_pics);
 				item.setImageNum(5);

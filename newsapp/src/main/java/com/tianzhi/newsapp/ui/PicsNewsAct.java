@@ -32,7 +32,7 @@ public class PicsNewsAct extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pics_news);
-		final String urls[] = {Constant.imageUrls[21],Constant.imageUrls[22],Constant.imageUrls[23],Constant.imageUrls[24],Constant.imageUrls[25]};
+		final String urls[] = {Constant.imageUrls[1],Constant.imageUrls[2],Constant.imageUrls[3],Constant.imageUrls[4],Constant.imageUrls[5]};
 		
 		final String contents[] = {
 				"这城管白天是执法者，到了晚上自己又成了被执法的对象，和城管队员打游击，这多少有些讽刺意味的猫和老鼠角色颠倒，在一开始博得了不少人的同情。大家纷纷猜测，是不是这位城管家庭比较困难，所以晚上出来摆地摊补贴下家用呢？",

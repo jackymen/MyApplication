@@ -1,1 +1,1 @@
-include ':app',':newsapp',':newsapp',':viewpagerindicator'
+include ':app',':newsapp',':pinyinime',':viewpagerindicator'
