@@ -32,7 +32,7 @@ public class NewsDetailAct extends Activity {
 		wSet.setDefaultTextEncodingName("GBK");
 		wView.setWebViewClient(new MyWebviewClient());
 
-		wView.loadUrl("file:///android_asset/22.html");
+		//wView.loadUrl("file:///android_asset/22.html");
 
 		TextView title = (TextView) this
 				.findViewById(R.id.tv_news_detial_title);
@@ -43,7 +43,7 @@ public class NewsDetailAct extends Activity {
 		setTextSize(Preferences.getTextSize(this));
 
 		// wView.loadUrl("content://com.android.htmlfileprovider/sdcard/index.html");
-		// wView.loadUrl("http://wap.baidu.com");
+		 wView.loadUrl("http://wap.baidu.com");
 	}
 
 	public void back(View v) {

@@ -1,1 +1,1 @@
-include ':app',':newsapp',':pinyinime',':viewpagerindicator'
+include ':app',':newsapp',':pinyinime',':viewpagerindicator',':vitamio',':KKPlayer1.0'

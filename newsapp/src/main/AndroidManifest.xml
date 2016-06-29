@@ -1,10 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.tianzhi.newsapp">
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
 
+    <uses-sdk tools:overrideLibrary="com.viewpagerindicator"/>
     <application
 
         android:allowBackup="true"
